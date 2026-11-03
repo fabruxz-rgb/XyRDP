@@ -1,25 +1,25 @@
 {
   "active": true,
-  "hostname": "rdpfree-8",
+  "hostname": "rdpfree-9",
   "os": "Microsoft Windows Server 2022 Datacenter",
   "os_build": "10.0.20348",
   "os_style": "Native Windows",
   "hardware": {
-    "disk_free_gb": 79.7,
     "ram_gb": 16.0,
-    "cpu_threads": 4
+    "cpu_threads": 4,
+    "disk_free_gb": 80.3
   },
   "rdp_port": 3389,
   "rdp_user": "xyadmin",
   "rdp_listen": ":::3389 (svchost) | 0.0.0.0:3389 (svchost) + handshake ok via 127.0.0.1",
   "rdp_denyts": true,
-  "started_at": "2026-11-03T07:09:11Z",
-  "expires_at": "2026-11-03T12:51:11Z",
+  "started_at": "2026-11-03T12:58:23Z",
+  "expires_at": "2026-11-03T18:40:23Z",
   "duration_menit": 342,
-  "run_id": "41594299317",
+  "run_id": "41639949417",
   "run_attempt": "1",
-  "run_number": "8",
-  "run_url": "https://github.com/fabruxz-rgb/XyRDP/actions/runs/41594299317",
+  "run_number": "9",
+  "run_url": "https://github.com/fabruxz-rgb/XyRDP/actions/runs/41639949417",
   "mode": "bersih+win10",
   "runtimes": {
     "vc2022x64": "sudah ada",
@@ -38,35 +38,35 @@
     "net35": "sudah ada"
   },
   "persist": {
-    "files": 981,
     "source": "xyrdp-state.7z.enc",
+    "restored": true,
     "profile": "C:\\Users\\xyadmin",
-    "restored": true
+    "files": 981
   },
   "storage": {
     "status": "ok",
     "mode": "boost-tidak",
-    "before_gb": 79.11,
-    "after_gb": 115.23,
-    "gained_gb": 36.12,
-    "removed_targets": 29,
+    "before_gb": 79.66,
+    "after_gb": 99.99,
+    "gained_gb": 20.33,
+    "removed_targets": 18,
     "drives": [
       {
-        "used_gb": 140.22,
-        "free_gb": 115.23,
         "letter": "C",
-        "size_gb": 255.45
+        "size_gb": 255.45,
+        "free_gb": 99.99,
+        "used_gb": 155.46
       },
       {
-        "used_gb": 3.0,
-        "free_gb": 147.0,
         "letter": "D",
-        "size_gb": 150.0
+        "size_gb": 150.0,
+        "free_gb": 147.0,
+        "used_gb": 3.0
       }
     ],
     "game_dir": "D:\\Games (disarankan untuk GTA)",
     "note": "Cleanup selesai. gained_gb adalah perubahan ruang aktual, bukan kapasitas yang dijanjikan. Target terkunci bisa tersisa.",
-    "updated_at": "2026-11-03T07:16:50.6688892Z"
+    "updated_at": "2026-11-03T13:09:11.2865691Z"
   },
   "fps_boost": {
     "status": "ok",
@@ -82,38 +82,34 @@
     ],
     "skipped": [],
     "applied_count": 8,
-    "elapsed_sec": 1.4,
+    "elapsed_sec": 1.6,
     "note": "Tweak rendering RDP & scheduler OS. Tidak menaikkan FPS game 3D tanpa GPU fisik; Mesa3D/WARP tetap dipakai.",
-    "updated_at": "2026-11-03T07:16:52.4763679Z"
+    "updated_at": "2026-11-03T13:09:13.3155612Z"
   },
   "grafis": {
-    "opengl": "4.6 (Mesa llvmpipe system-wide x64/x86 + OpenGL ES 3.2)",
     "vulkan": "lavapipe 1.3 (CPU)",
-    "mesa": "26.2.6",
-    "mode": "software",
+    "path": "C:\\XyRDP\\grafis\\mesa-x64",
+    "opengl": "4.6 (Mesa llvmpipe system-wide x64/x86 + OpenGL ES 3.2)",
     "adapters": "Microsoft Hyper-V Video",
-    "path": "C:\\XyRDP\\grafis\\mesa-x64"
+    "mesa": "26.2.6",
+    "mode": "software"
   },
   "games": {
-    "fivem": {
-      "status": true,
-      "sound": true
+    "memu": {
+      "status": "ready",
+      "launcher": "C:\\Games\\MEmu\\Launch-MEmu.ps1"
     },
     "roblox": {
       "catatan": "Instalasi resmi Roblox siap. VM dapat ditolak anti-cheat Roblox; tidak ada spoofing BIOS/bypass.",
       "status": "installer_ready",
       "launcher": "C:\\Games\\Roblox\\Launch-Roblox-AntiVM.ps1"
     },
-    "memu": {
-      "status": "ready",
-      "launcher": "C:\\Games\\MEmu\\Launch-MEmu.ps1"
-    },
     "minecraft_java": {
-      "opengl46": false,
-      "prismlauncher": true,
-      "status": "ready",
+      "tlauncher_jar": true,
       "official_exe": true,
-      "tlauncher_jar": true
+      "prismlauncher": true,
+      "opengl46": false,
+      "status": "ready"
     },
     "ets2": {
       "status": "ready",
@@ -122,29 +118,33 @@
     "blender": {
       "status": "ready",
       "launcher": "C:\\Games\\Blender\\Launch-Blender.ps1"
+    },
+    "fivem": {
+      "status": true,
+      "sound": true
     }
   },
   "tools_hub": {
     "installed": true,
-    "auto_start": true,
-    "exe": "C:\\XyRDP\\tools\\XyDeskDashboard.exe"
+    "exe": "C:\\XyRDP\\tools\\XyDeskDashboard.exe",
+    "auto_start": true
   },
   "akses": {
-    "tailscale": {
-      "hostname": "rdpfree",
-      "ip": "100.74.212.125",
-      "note": "HP/PC harus login Tailscale pada tailnet yang sama. TCP 3389 harus diizinkan ACL.",
-      "magicdns": "rdpfree-5.tail1d330d.ts.net.",
-      "status": "ok"
-    },
     "tunnel": {
       "selftest": "ok",
-      "address": "100.74.212.125:3389",
-      "port": 3389,
       "outside": "tailscale",
-      "host": "100.74.212.125",
+      "port": 3389,
+      "host": "100.111.135.91",
+      "address": "100.111.135.91:3389",
       "status": "ok"
     },
-    "mode": "tailscale"
+    "mode": "tailscale",
+    "tailscale": {
+      "note": "HP/PC harus login Tailscale pada tailnet yang sama. TCP 3389 harus diizinkan ACL.",
+      "magicdns": "rdpfree-6.tail1d330d.ts.net.",
+      "hostname": "rdpfree",
+      "status": "ok",
+      "ip": "100.111.135.91"
+    }
   }
 }
